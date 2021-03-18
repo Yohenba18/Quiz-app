@@ -3,8 +3,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Quiz</h1>
+    <div className="quiz">
+      <h1 style={{"color": "white"}}>Quiz</h1>
     </div>
   );
 }
