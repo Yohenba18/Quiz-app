@@ -17,7 +17,21 @@ function App() {
         <div className="quiz__ques">
           <h3><span>1.</span> Who is the richest person in the world?</h3>
         </div>
+
+        <div className="quiz__ans">
+          <div className="option__top">
+            <div className="options"><button>Jeff Bezos</button></div>
+            <div className="options"><button>Elon Musk</button></div>
+          </div>
+          <div className="option__bottom">
+            <div className="options"><button>Bill Gates</button></div>
+            <div className="options"><button>Mark Zukerberg</button></div>
+          </div>
+        </div>
       </div>
+      <footer>
+       <p>Made with 💖 by Yohenba Kshetrimayum</p>
+      </footer>
     </div>
   );
 }
