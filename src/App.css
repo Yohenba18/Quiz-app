@@ -68,6 +68,8 @@ button{
  font-style: normal;
  font-weight: normal;
  background-color: #111111;
+ color: rgba(255,255,255,1);
+
 }
 
 .quiz .quiz__ans .options{
