@@ -58,6 +58,17 @@
   justify-content: space-evenly;
 }
 
+button{
+ width:295px;
+ height: 56px;
+ border-radius: 30px;
+ border-color: #03DAC6;
+ font-size:20px;
+ font-family: Arial; 
+ font-style: normal;
+ font-weight: normal;
+ background-color: #111111;
+}
 
 .quiz .quiz__ans .options{
   margin: 0 40px  47px 27.5px;
