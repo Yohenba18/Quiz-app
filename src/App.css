@@ -69,7 +69,8 @@ button{
  font-weight: normal;
  background-color: #111111;
  color: rgba(255,255,255,1);
-
+ outline: none;
+ overflow: visible;
 }
 
 .quiz .quiz__ans .options{
