@@ -29,7 +29,9 @@ function App() {
           </div>
         </div>
       </div>
-
+      <footer>
+       <p>Made with 💖 by Yohenba Kshetrimayum</p>
+      </footer>
     </div>
   );
 }
