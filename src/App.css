@@ -95,7 +95,7 @@ footer{
     height: 419px;
   }
   .quiz .quiz__ques > h3 {
-    padding: 34px 0;
+    padding: 24px 0;
     font-size:16px;
   }
   .quiz .quiz__ans .options{
@@ -120,7 +120,7 @@ footer{
 
 @media screen and (max-width: 320px) {
   .App .quiz{
-    max-width:300px;
+    max-width:180px;
     margin-top: auto;
     margin-bottom: auto;
     height: 419px;
@@ -131,5 +131,10 @@ footer{
   }
   .quiz .quiz__ans .options{
     margin: 7px 0;
+  }
+  button{
+    width:195px;
+    height:56px;
+    font-size: 16px;
   }
 }
