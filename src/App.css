@@ -102,7 +102,7 @@ footer{
     margin: 7px 0;
   }
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 375px) {
   .App .quiz{
     max-width:300px;
     margin-top: auto;
