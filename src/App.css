@@ -102,9 +102,25 @@ footer{
     margin: 7px 0;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 428px) {
   .App .quiz{
-    max-width:280px;
+    max-width:300px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 419px;
+  }
+  .quiz .quiz__ques > h3 {
+    padding: 34px 0;
+    font-size:16px;
+  }
+  .quiz .quiz__ans .options{
+    margin: 7px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .App .quiz{
+    max-width:300px;
     margin-top: auto;
     margin-bottom: auto;
     height: 419px;
