@@ -48,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+    
       <div className="quiz">
         <div className="quiz__header">
           <div className="quiz__headerLeft">
@@ -60,13 +61,13 @@ function App() {
         </div>
         <div className="quiz__ques">
           <h3>
-            <span>1.</span> {questions[0].questionText}
+            <span>1.</span> {questions[2].questionText}
           </h3>
         </div>
 
         <div className="quiz__ans">
           {
-            questions[0].answerOptions.map((answerOption) => (
+            questions[2].answerOptions.map((answerOption) => (
               <div className="options">
               <button>{answerOption.answerText}</button>
               </div>

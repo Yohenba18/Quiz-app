@@ -109,7 +109,7 @@ footer{
   }
   .quiz .quiz__ques > h3 {
     padding: 24px 0;
-    font-size:16px;
+    font-size:20px;
   }
   .quiz .quiz__ans .options{
     margin: 7px 0;
@@ -122,11 +122,11 @@ footer{
     max-width:200px;
     margin-top: auto;
     margin-bottom: auto;
-    height: 419px;
+    height: 450px;
   }
   .quiz .quiz__ques > h3 {
-    padding: 34px 0;
-    font-size:16px;
+    padding: 24px 0;
+    font-size:20px;
   }
   .quiz .quiz__ans .options{
     margin: 7px 0;
