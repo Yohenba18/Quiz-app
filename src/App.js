@@ -46,6 +46,19 @@ function App() {
   const [current,setCurrent] = useState(0)
   const [showScore,setShowScore] = useState(false)
 
+  const handleAnswerOptionClick = (isCorrect) => {
+	  if(isCorrect){
+		  setScore(score+1);
+	  }
+
+	  const nextQuestion = current + 1;
+		if (nextQuestion < questions.length) {
+			setCurrent(nextQuestion);
+		} else {
+			setShowScore(true);
+		}
+  }
+
   return (
     <div className="App">
     
@@ -55,21 +68,21 @@ function App() {
             <span>Questions</span>
           </div>
           <div className="quiz__headerRight">
-            <span id="id1">1/</span>
+            <span id="id1">{current + 1}/</span>
             <span id="id5">5</span>
           </div>
         </div>
         <div className="quiz__ques">
           <h3>
-            <span>1.</span> {questions[2].questionText}
+            <span>{current + 1}.</span> {questions[current].questionText}
           </h3>
         </div>
 
         <div className="quiz__ans">
           {
-            questions[2].answerOptions.map((answerOption) => (
+            questions[current].answerOptions.map((answerOption) => (
               <div className="options">
-              <button>{answerOption.answerText}</button>
+              <button onClick= {()=> handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
               </div>
             ))
           }
