@@ -3,7 +3,44 @@ import "./App.css";
 
 function App() {
    
-  
+  const questions = [
+		{
+			questionText: 'What is the capital of France?',
+			answerOptions: [
+				{ answerText: 'New York', isCorrect: false },
+				{ answerText: 'London', isCorrect: false },
+				{ answerText: 'Paris', isCorrect: true },
+				{ answerText: 'Dublin', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Who is CEO of Tesla?',
+			answerOptions: [
+				{ answerText: 'Jeff Bezos', isCorrect: false },
+				{ answerText: 'Elon Musk', isCorrect: true },
+				{ answerText: 'Bill Gates', isCorrect: false },
+				{ answerText: 'Tony Stark', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'The iPhone was created by which company?',
+			answerOptions: [
+				{ answerText: 'Apple', isCorrect: true },
+				{ answerText: 'Intel', isCorrect: false },
+				{ answerText: 'Amazon', isCorrect: false },
+				{ answerText: 'Microsoft', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'How many Harry Potter books are there?',
+			answerOptions: [
+				{ answerText: '1', isCorrect: false },
+				{ answerText: '4', isCorrect: false },
+				{ answerText: '6', isCorrect: false },
+				{ answerText: '7', isCorrect: true },
+			],
+		},
+	];
 
   return (
     <div className="App">
@@ -19,26 +56,22 @@ function App() {
         </div>
         <div className="quiz__ques">
           <h3>
-            <span>1.</span> Who is the richest person in the world?
+            <span>1.</span> {questions[0].questionText}
           </h3>
         </div>
 
         <div className="quiz__ans">
-          <div className="options">
-            <button>Jeff Bezos</button>
-          </div>
-          <div className="options">
-            <button>Elon Musk</button>
-          </div>
-
-          <div className="options">
-            <button>Bill Gates</button>
-          </div>
-          <div className="options">
-            <button>Mark Zukerberg</button>
-          </div>
+          {
+            questions[0].answerOptions.map((answerOption) => (
+              <div className="options">
+              <button>{answerOption.answerText}</button>
+              </div>
+            ))
+          }
         </div>
       </div>
+
+      
       <footer>
         <p>Made with 💖 by Yohenba Kshetrimayum</p>
       </footer>
