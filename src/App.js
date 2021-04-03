@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -42,6 +42,10 @@ function App() {
 		},
 	];
 
+  const [score,setScore] = useState(0)
+  const [current,setCurrent] = useState(0)
+  const [showScore,setShowScore] = useState(false)
+
   return (
     <div className="App">
       <div className="quiz">
@@ -71,7 +75,7 @@ function App() {
         </div>
       </div>
 
-      
+
       <footer>
         <p>Made with 💖 by Yohenba Kshetrimayum</p>
       </footer>
