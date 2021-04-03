@@ -64,7 +64,7 @@ function App() {
 
 	{showScore? (
 		<div className="quiz__score">
-			<h2>Your Score is <span style={{color: "magenta"}}>{score}</span> out of <{questions.length}</h2>
+			<h2>Your Score is <span style={{color: "magenta"}}>{score}</span> out of <span>{questions.length}</span></h2>
 		</div>
 	): (
 		<div className="quiz">
