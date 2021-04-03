@@ -40,6 +40,15 @@ function App() {
 				{ answerText: '7', isCorrect: true },
 			],
 		},
+		{
+			questionText: 'Who is the founder of Bitcoin?',
+			answerOptions: [
+				{ answerText: 'Elon Musk', isCorrect: false },
+				{ answerText: 'Barry George', isCorrect: false },
+				{ answerText: 'Emma Stone', isCorrect: false },
+				{ answerText: 'Satoshi Nakamoto', isCorrect: true },
+			],
+		},
 	];
 
   const [score,setScore] = useState(0)
@@ -64,7 +73,7 @@ function App() {
 
 	{showScore? (
 		<div className="quiz__score">
-			<h2>Your Score is <span style={{color: "magenta"}}>{score}</span> out of <span>{questions.length}</span></h2>
+			<h2>Your Score is <span style={{color: "magenta"}}>{score}</span> out of <span style={{color: "blue"}}>{questions.length}</span></h2>
 		</div>
 	): (
 		<div className="quiz">
